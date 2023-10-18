@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _printf(const char *format, ...)
+int myst_printf(const char *format, ...)
 {
 	va_list argList;
 	char ch = va_arg(argList, int);
