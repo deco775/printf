@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+	_printf - printf function
+@format: format.
+	Return: printed chars.
+	*/
 int myst_printf(const char *format, ...)
 {
 	va_list argList;
