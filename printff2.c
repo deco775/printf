@@ -11,8 +11,6 @@
 int _printf(const char *format, ...) {
     int charC = 0;
     va_list argL;
-    char *stng = va_arg(argL, char*);
-    int strLen = 0;
 
     if (format == NULL)
         return (-1);
@@ -35,6 +33,8 @@ int _printf(const char *format, ...) {
             }
 	    else if (*format == 's')
 	    {
+		char *stng = va_arg(argL, char*);
+		int strLen = 0;
 
                 while (stng[strLen] != '\0')
 	       	{
